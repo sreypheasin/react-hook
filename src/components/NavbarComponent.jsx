@@ -72,9 +72,9 @@ export default function NavbarComponent() {
     setPassword(e.target.value);
   };
   return (
-    <>
-      <Navbar fluid rounded className="bg-gray-300">
-        <Navbar.Brand href="https://flowbite-react.com">
+    <div className="bg-gray-300">
+      <Navbar fluid rounded className="bg-gray-300 max-w-screen-xl mx-auto">
+        <Navbar.Brand>
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             Flowbite React
           </span>
@@ -122,7 +122,7 @@ export default function NavbarComponent() {
         </Navbar.Collapse>
       </Navbar>
       <h2 className="m-8">{name}</h2>
-      <div>
+      {/* <div>
         <form action="#">
           <label htmlFor="name">Name</label>
           <input
@@ -140,7 +140,7 @@ export default function NavbarComponent() {
           />
           <p className="text-red-700">{error.message}</p>
         </form>
-      </div>
-    </>
+      </div> */}
+    </div>
   );
 }
